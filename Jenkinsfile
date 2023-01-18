@@ -14,7 +14,7 @@ agent any
 			    stage('Build docker image'){
                              steps{
                                  script{
-                                    sh 'docker build -t rahmahaouas/projectdevops .'
+                                    sh 'docker build -t mohamed/projectdevops .'
                                  }
                              }
                          }
@@ -24,7 +24,7 @@ agent any
 		        stage('Docker push') {
                              steps {
                                     sh 'echo "Docker is pushing ...."'
-                     	            sh 'docker push rahmahaouas/projectdevops'
+                     	            sh 'docker push mohamed/projectdevops'
                                }  }
 
                 stage('Docker compose') {
